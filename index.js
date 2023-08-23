@@ -18,7 +18,7 @@ const generateProfile = (profile) => {
             </div>
             <div class="self">
               <h1>${profile.name}</h1>
-              <h1>${profile.login}</h1>
+              <h1>@${profile.login}</h1>
             </div>
           </div>
                 <a href="${profile.html_url}" 

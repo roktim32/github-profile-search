@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
 
 * {
   padding: 0;
@@ -24,32 +24,40 @@ body {
   justify-content: center;
   gap: 4rem;
 }
-
+.topHeading {
+  background: linear-gradient(135deg, #f46c6c, #087afd);
+  background-clip: text; /* Apply the gradient to the text */
+  -webkit-background-clip: text; /* For Safari compatibility */
+  color: transparent;
+}
 .search {
   display: flex;
   width: 50%;
   max-width: 78rem;
+  gap: 1rem;
 }
 
 .search input {
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   width: 100%;
+  border-radius: 5px;
 }
 .search input:focus-visible {
-  outline: 1px solid purple;
+  outline: 1px solid rgb(9, 102, 208);
 }
 
 .primary-btn {
-  background: purple;
+  background: #087afd;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
+  border-radius: 10px;
 }
 .primary-btn:hover {
-  background: rgb(104, 2, 104);
+  background: #0655af;
 }
 .primary-btn:active {
-  background: rgb(190, 60, 190);
+  background: #519cf1;
 }
 
 /* FOR CARD */
@@ -59,7 +67,7 @@ body {
 .profile-box {
   margin: auto;
   padding: 4rem 2rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
   border-radius: 25px;
   width: 90%;
   max-width: 60 rem;
