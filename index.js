@@ -39,7 +39,7 @@ const generateProfile = (profile) => {
           </div>
           <div class="status-item">
             <h3>Followings</h3>
-            <p>${profile.followers}</p>
+            <p>${profile.following}</p>
           </div>
           <div class="status-item">
             <h3>Repos</h3>

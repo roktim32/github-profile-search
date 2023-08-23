@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 * {
   padding: 0;
@@ -8,10 +8,9 @@
 
 html,
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 62.5%; /* 62.5% because now 1rem=10px */
+  font-family: "Oswald", sans-serif;
+  font-size: 62.5%;
 }
-
 body {
   font-size: 1.6rem;
 }
@@ -33,17 +32,14 @@ body {
 .search {
   display: flex;
   width: 50%;
-  max-width: 78rem;
-  gap: 1rem;
+  max-width: 60rem;
 }
-
 .search input {
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   width: 100%;
-  border-radius: 5px;
 }
 .search input:focus-visible {
-  outline: 1px solid rgb(9, 102, 208);
+  outline: 1px solid purple;
 }
 
 .primary-btn {
@@ -51,51 +47,44 @@ body {
   color: white;
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: 10px;
 }
 .primary-btn:hover {
-  background: #0655af;
+  background: #0b71e6;
 }
 .primary-btn:active {
-  background: #519cf1;
+  background: #4597f5;
 }
 
-/* FOR CARD */
+/* For Card */
+
 #profileContainer {
   width: 100%;
 }
 .profile-box {
   margin: auto;
   padding: 4rem 2rem;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
   width: 90%;
-  max-width: 60 rem;
+  max-width: 78rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   transition: 0.5s ease-in;
+  border-radius: 25px;
 }
-
 .profile-box:hover {
   transform: rotate(-2deg) scale(1.01);
   transition: 0.5s ease-in;
 }
-
-.top-section button {
-  align-self: center;
-  border-radius: 5px;
-}
-
 .top-section {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
 }
-
+.top-section button {
+  align-self: center;
+}
 .left {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-
 .left h1 {
   font-size: 1.6rem;
 }
@@ -116,7 +105,6 @@ body {
 
 .status {
   display: grid;
-  margin: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
